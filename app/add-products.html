@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Product</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Midterm TT4</title>
 </head>
 
 <body>
@@ -16,7 +15,6 @@
             <div class="list-group list-group-flush">
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="index.html">Home</a>
                 <a class="list-group-item list-group-item-action list-group-item-light p-3" href="list-products.html">List</a>
-                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="add-products.html">Add Product</a>
             </div>
         </div>
         <div id="page-content-wrapper">
@@ -46,42 +44,19 @@
                 </div>
             </nav>
             <div id="content" class="container-fluid p-5">
-                <h1 class="mt-4">Add New Product</h1>
-                <form>
-                    <div class="mb-3">
-                        <label for="productPhoto" class="form-label">Product Photo</label>
-                        <input type="file" class="form-control" id="productPhoto" accept="image/*">
-                    </div>
-                    
-                    <div class="mb-3">
-                        <label for="productTitle" class="form-label">Title</label>
-                        <input type="text" class="form-control" id="productTitle" required>
-                    </div>
+                <h1 class="mt-4"> List of Products</h1>
 
-                    <div class="mb-3">
-                        <label for="productDescription" class="form-label">Description</label>
-                        <textarea class="form-control" id="productDescription" rows="3" maxlength="100" required></textarea>
-                        <small class="form-text text-muted">Description limited to 100 characters.</small>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="productPrice" class="form-label">Price</label>
-                        <input type="number" class="form-control" id="productPrice" step="0.01" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="productQuantity" class="form-label">Quantity</label>
-                        <input type="number" class="form-control" id="productQuantity" min="1" required>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary">Add Product</button>
-                </form>
+                <h2>Destinations</h2>
+                <div id="products" class="container d-flex gap-2">
+                    <img src="product9.jpg" alt="product9" class="img-fluid">
+                    <img src="product5.jpg" alt="product5" class="img-fluid">
+                    <img src="product6.jpg" alt="product6" class="img-fluid">
+                    <img src="product7.jpg" alt="product7" class="img-fluid">
+                    <img src="product8.jpg" alt="product8" class="img-fluid">
+                </div>
             </div>
         </div>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
