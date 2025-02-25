@@ -36,12 +36,15 @@ COPY ./default.conf /etc/nginx/sites-available/default
 RUN echo "API_PORT=3000" >> /app/.env
 
 # EXPOSE ??
+
+COPY ./entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
+
 FROM nginx
 
 COPY /app/dist /usr/share/nginx/html
 
 EXPOSE 80
 
-COPY ./entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
-ENTRYPOINT ["/entrypoint.sh"]
+CMD ["nginx", "-g", "daemon off;"]
